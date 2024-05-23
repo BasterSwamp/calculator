@@ -76,7 +76,11 @@ async function getResponseEl() {
         select = e.closest('.select'),
         currentText = select.querySelector('.select-current')
         currentText.innerText = text;
+        
         paymentMethodFunction()
+        if (mainNumber.textContent == 0) {
+          modalWindow.classList.add("open");
+        }
         select.classList.remove('active');
       })
     }); 
