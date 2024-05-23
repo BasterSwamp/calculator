@@ -131,7 +131,6 @@ h1, h2, h3, h4, h5, h6 {
   touch-action: none;
   overscroll-behavior: none;
 }
-
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -140,11 +139,9 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 50px 150px;
   background: #06173B;
-}
-.wrapper > main {
-  flex: 1 1 auto;
 }
 .wrapper > * {
   min-width: 0;
@@ -203,6 +200,9 @@ header {
 main {
   font-size: 25px;
   color: #fff;
+  max-width: 73.75em;
+  margin: 0 auto;
+  width: 100%;
 }
 .page-block {
   display: none;
