@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="wrapper">
+  <header>
+    <div class="title">Тарифи для бізнесу</div>
+    <div class="subtitle">
+      <a href="#firstPage" class="subtitle-btn">Електроенергія</a>
+      <a href="#secondPage" class="subtitle-btn">Природний газ</a>
+    </div>
+  </header>
+  <main>
+    <div class="page-block" id="firstPage">
+      <article class="mainpage" id="sectionEl">
+        <div class="top-rows">
+          <section>
+            <span class="select-title">Регіон постачання</span>
+            <div class="select">
+              <div class="select-header">
+                <span class="select-current">Івано-Франківськ</span>
+                <span class="select-icon">
+                  <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 0L8.50002 7.54993L2.83339 0H0L8.50002 11.325L17 0H14.1667Z" fill="white"/>
+                  </svg>                    
+                </span>
+              </div>
+              <div class="option-body" id="cityEl">
+              </div>
+            </div>
+          </section>
+          <section>
+            <span class="select-title">Місяць</span>
+            <div class="select">
+              <div class="select-header">
+                <span class="select-current">Січень</span>
+                <span class="select-icon">
+                  <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 0L8.50002 7.54993L2.83339 0H0L8.50002 11.325L17 0H14.1667Z" fill="white"/>
+                  </svg>                    
+                </span>
+              </div>
+              <div class="option-body" id="monthEl">
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="bottom-rows">
+          <section>
+            <span class="select-title">Обсяг споживання</span>
+            <input class="number-input" type="number" id="inpNumEl" value="1000">
+            <span class="select-subtitle">введіть потрібне значення</span>
+          </section>
+          <section>
+            <span class="select-title">ПДВ</span>
+            <div class="section_radio">
+                <input type="radio" id="mpeEl" name="mpeEl" value="yes" checked>
+                <label for="mpeEl">з ПДВ</label>
+                <input type="radio" name="mpeEl" id="mpeEl1" value="no">
+                <label for="mpeEl1">без ПДВ</label>
+            </div>
+          </section>
+        </div>
+        <section class="section_range">
+          <span class="select-title">Спосіб оплати</span>
+          <div class="section_radio" id="paymentMethodEl">
+              <input type="radio" id="radioEl1" name="paymentMethodEl" value="Передоплата">
+              <label for="radioEl1">Передоплата</label>
+              <input type="radio" id="radioEl2" name="paymentMethodEl" value="Оплата частинами" checked>
+              <label for="radioEl2">Оплата частинами</label>
+              <input type="radio" id="radioEl3" name="paymentMethodEl" value="Оплата по факту">
+              <label for="radioEl3">По факту</label>
+          </div>
+        </section>
+        <section class="section_range">
+          <span class="select-title">Складові тарифного плану</span>
+          <div class="section_radio">
+              <input type="radio" id="radio4" name="componentsTP" value="actualPrice">
+              <label for="radio4">Фактична вартість</label>
+              <input type="radio" id="radio5" name="componentsTP" value="transmissionTariff" checked>
+              <label for="radio5">Тариф передачі</label>
+              <input type="radio" id="radio6" name="componentsTP" value="distributionTariff">
+              <label for="radio6">Тариф на розподіл</label>
+          </div>
+        </section>
+      </article>
+      <aside>
+        <div class="aside-body">
+          <article>
+            <section class="top-value">
+              <div class="title_aside">від</div>
+              <div class="number" id="mainNumberEl">7.03</div>
+              <div class="subtitle_aside">грн/кВт*год</div>
+            </section>
+            <section class="bottom-value">
+              <div class="title_aside">До сплати</div>
+              <div class="number" id="paymentNumberEl">7 030 грн</div>
+              <div class="subtitle_aside">грн</div>
+            </section>
+            <span class="bottom-value_subtitle">розрахунок є орієнтовним  та може відрізнятися у кінцевих рахунках</span>
+          </article>
+          <a href="##">Зробити заявку</a>
+        </div>
+      </aside>
+    </div>
+    <div class="page-block" id="secondPage">
+      <article class="mainpage" id="sectionGas">
+        <div class="top-rows">
+          <section>
+            <span class="select-title">Регіон постачання</span>
+            <div class="select">
+              <div class="select-header">
+                <span class="select-current">Івано-Франківськ</span>
+                <span class="select-icon">
+                  <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 0L8.50002 7.54993L2.83339 0H0L8.50002 11.325L17 0H14.1667Z" fill="white"/>
+                  </svg>                    
+                </span>
+              </div>
+              <div class="option-body" id="cityGas">
+                <span class="option-item">Івано-Франківськ</span>
+                <span class="option-item">Тернопіль</span>
+                <span class="option-item">Хмельницький</span>
+              </div>
+            </div>
+          </section>
+          <section>
+            <span class="select-title">Місяць</span>
+            <div class="select">
+              <div class="select-header">
+                <span class="select-current">Січень</span>
+                <span class="select-icon">
+                  <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1667 0L8.50002 7.54993L2.83339 0H0L8.50002 11.325L17 0H14.1667Z" fill="white"/>
+                  </svg>                    
+                </span>
+              </div>
+              <div class="option-body" id="monthGas">
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="bottom-rows">
+          <section>
+            <span class="select-title">Обсяг споживання</span>
+            <input class="number-input" type="number" id="inpNumGas" value="1000">
+            <span class="select-subtitle">введіть потрібне значення</span>
+          </section>
+          <section>
+            <span class="select-title">ПДВ</span>
+            <div class="section_radio">
+                <input type="radio" id="mpeGas" name="mpeGas" value="yes" checked>
+                <label for="mpeGas">з ПДВ</label>
+                <input type="radio" name="mpeGas" id="mpeGas1" value="no">
+                <label for="mpeGas1">без ПДВ</label>
+            </div>
+          </section>
+        </div>
+        <section class="section_range">
+          <span class="select-title">Спосіб оплати</span>
+          <div class="section_radio" id="paymentMethodGas">
+              <input type="radio" id="radioGas1" name="paymentMethodGas" value="Передоплата">
+              <label for="radioGas1">Передоплата</label>
+              <input type="radio" id="radioGas2" name="paymentMethodGas" value="Оплата частинами" checked>
+              <label for="radioGas2">Оплата частинами</label>
+              <input type="radio" id="radioGas3" name="paymentMethodGas" value="Оплата по факту">
+              <label for="radioGas3">По факту</label>
+          </div>
+        </section>
+      </article>
+      <aside>
+        <div class="aside-body">
+          <article>
+            <section class="top-value">
+              <div class="title_aside">від</div>
+              <div class="number" id="mainNumberGas">7.03</div>
+              <div class="subtitle_aside">грн/кВт*год</div>
+            </section>
+            <section class="bottom-value">
+              <div class="title_aside">До сплати</div>
+              <div class="number" id="paymentNumberGas">7 030 грн</div>
+              <div class="subtitle_aside">грн</div>
+            </section>
+            <span class="bottom-value_subtitle">розрахунок є орієнтовним  та може відрізнятися у кінцевих рахунках</span>
+          </article>
+          <a href="##">Зробити заявку</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <div id="modal" class="modal">
+    <div class="content">
+      <span>Нажаль, на даний момент, для цього регіону, оплата по факту недоступна</span>
+      <div id="closeBtn">Close</div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
